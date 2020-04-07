@@ -31,7 +31,7 @@ namespace GraphDZ2
         }
 
         private void computeSplines() {
-            // Init X splines
+            // Compute X splines
             for (int y = 0; y < colorArray[0].Length; ++y) {
                 for (int x = 0; x < colorArray.Length - 3; ++x) {
                     double[][] matrix = {
@@ -52,7 +52,7 @@ namespace GraphDZ2
                 }
             }
 
-            // Init Y splines
+            // Compute Y splines
             for (int x = 0; x < colorArray.Length; ++x) {
                 for (int y = 0; y < colorArray[0].Length - 3; ++y) {
                     double[][] matrix = {
