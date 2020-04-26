@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace GraphDZ2
@@ -15,6 +8,13 @@ namespace GraphDZ2
         public Form1()
         {
             InitializeComponent();
+        }
+
+        public Form1(Bitmap img) {
+            InitializeComponent();
+            this.Size = img.Size;
+            pictureBox1.Size = img.Size;
+            pictureBox1.Image = img;
         }
     }
 }
